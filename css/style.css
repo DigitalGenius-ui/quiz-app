@@ -48,6 +48,7 @@ body{
     width: 32rem;
     border-radius: 10px;
     animation: pop 600ms ease-in-out;
+    overflow: hidden;
 }
 @media(max-width : 520px){
     .popUp{
@@ -128,4 +129,50 @@ body{
     to{
         opacity: 1;
     }
+}
+
+.header{
+    position: relative;
+}
+
+.line{
+    position: absolute;
+    border: 1px solid blue;
+    right: 0;
+    left: 0;
+    top: 54px;
+    width: 0;
+}
+.result{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 20rem;
+    display: none;
+}
+.result.active{
+    display: block;
+}
+.result h1{
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+
+.result p{
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+}
+.result span{
+    font-size: 0.8rem;
+}
+.green{
+    color: rgb(8, 186, 8);
+    font-weight: 700;
+}
+.red{
+    color: red;
 }
